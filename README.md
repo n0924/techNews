@@ -1,1 +1,1 @@
-# techdiscussion
+# techDiscussion
