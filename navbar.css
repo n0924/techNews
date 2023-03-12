@@ -1,0 +1,32 @@
+.navigation-bar {
+    overflow: hidden;
+    background-color: #6c93ca;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation-bar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Courier New', sans-serif;
+}
+
+.navigation-bar a:hover {
+    background-color: black;
+}
+
+/* post list */
+.post-example:hover {
+    color: black;
+}
+
+.post-example:visited {
+    text-decoration: none;
+    color: black;
+}

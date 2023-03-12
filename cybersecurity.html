@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
     <title>Tech Discussion</title>
     <style>
         body {
@@ -31,59 +32,6 @@
             /* border: 1px solid black; */
             
         }
-
-        .navigation-bar {
-            margin: 0px;
-            height: 30px;
-            
-        }
-
-        /* ul */
-        .navigation-bar {
-            margin: 0px;
-            height: 30px;
-            
-        }
-
-        /* ul */
-        .nav {
-            list-style-type: none;
-            margin: 10px;
-            padding: 15px;
-            overflow: hidden;
-    
-            /* background-color: #333; */
-            height: 30px;
-            font-size: 20px;
-            border-radius: 7px;
-            /* font-size: 25px; */
-        }
-
-        .navli a {
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-family: 'Courier New', sans-serif;
-            border-style: solid;
-            border-color: white;
-            border-radius: 7px;
-            background-color: #b7c9e2;
-            /* #adc3d1 */
-            /* #b7c9e2 */
-            /* #c5e3fc */
-            /* #adc3d1 */
-            /* #Eccdc1; */
-            /* font-family: Palatino, sans-serif; */
-            /* width: 100px; */
-        }
-
-        .navli {
-            float: left;
-            display: inline;
-        }
-
-        
 
         li a:hover {
             background-color: #111;
@@ -156,7 +104,7 @@
 
 </head>
 <body>
-    <div class="navigation-bar">
+    <!-- <div class="navigation-bar">
         <ul class="nav">
             <li class="navli"><a href = "main.html">Home</a></li>
             <li class="navli"><a href = "artificialIntelligence.html">Artificial Intelligence</a></li>
@@ -166,7 +114,17 @@
             <li class="navli"><a href = "game.html">Games</a></li>
             <li class="navli"><a href = "beginners.html">Beginners</a></li>
         </ul>
-    </div>
+    </div> -->
+    <div class="navigation-bar" id="mynavbar">
+        <a href = "main.html">Home</a>
+        <a href = "artificialIntelligence.html">Artificial Intelligence</a>
+        <a href = "cybersecurity.html">Cyber Security</a>
+        <a href = "softwareEngineering.html">Software Engineering</a>
+        <a href = "machineLearning.html">Machine Learning</a>
+        <a href = "game.html">Games</a>
+        <a href = "beginners.html">Beginners</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     <div class="container">
         <div class="article"><span class="bolded">Cyber Security</span>
             <button id="filter" type="button">Filter</button>
@@ -176,9 +134,11 @@
             
             <ul class="post-list">
                 <li class="post-listli">
+                    <a class="post-example" href="post-cybersecurity.html" style="text-decoration: none;">
                     <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
-                    <h3>Post 1</h3>
+                    <h3>Cyber Security Post 1</h3>
                     <p>Summary of post 1</p>
+                    </a>
                 </li>
 
                 <li class="post-listli">
