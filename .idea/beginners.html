@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Discussion</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .container {
+            /* width: 100vw; */
+            height: 100vh;
+
+            /* font-family: 'Quicksand', sans-serif; Courier New*/
+            font-size: 20px;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 1fr;
+
+            gap: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            padding: 40px;
+            /* border: 1px solid black; */
+            
+        }
+
+        .navigation-bar {
+            margin: 0px;
+            height: 30px;
+            
+        }
+
+        /* ul */
+        .nav {
+            list-style-type: none;
+            margin: 10px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #333;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        .navli {
+            float: left;
+            display: inline;
+        }
+
+        .navli a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Palatino, sans-serif;
+            /* width: 100px; */
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .article {
+            font-size: 35px;
+            margin: 10px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .post-list div {
+            margin: 10px;
+            
+        }
+
+        .post-list {
+            list-style-type: none;
+            width: 1fr;
+            font-family: 'Courier New', sans-serif;
+        }
+
+        h3 {
+            font: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        li img {
+            float: left;
+            margin: 10px 15px 0 0;
+            width: 175px;
+            height: 175px;
+        }
+
+        .post-listli p {
+            font: 100px/1.5;
+        }
+
+        .post-listli {
+            overflow: auto;
+        }
+
+        .post-listli:hover {
+            background: #eee;
+            cursor: pointer;
+        }
+
+        #filter {
+            float: right;
+            display: block;
+            border: none;
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        #filter:hover {
+            cursor: pointer;
+            background: grey;
+            color: white;
+        }
+
+        .bolded {
+            font-weight: bold;
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="navigation-bar">
+        <ul class="nav">
+            <li class="navli"><a href = "artificialIntelligence.html">Artificial Intelligence</a></li>
+            <li class="navli"><a href = "cybersecurity.html">Cyber Security</a></li>
+            <li class="navli"><a href = "softwareEngineering.html">Software Engineering</a></li>
+            <li class="navli"><a href = "machineLearning.html">Machine Learning</a>
+            <li class="navli"><a href = "game.html">Games</a></li>
+            <li class="navli"><a href = "beginners.html">Beginners</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="article"><span class="bolded">Beginners</span>
+            <button id="filter" type="button">Filter</button>
+        </div>
+        
+        <div class="list">
+            
+            <ul class="post-list">
+                <li class="post-listli">
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 1</h3>
+                    <p>Summary of post 1</p>
+                </li>
+
+                <li class="post-listli">
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 2</h3>
+                    <p>Summary of post 2</p>
+                </li>
+
+                <li class="post-listli">
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 3</h3>
+                    <p>Summary of post 3</p>
+                </li>
+
+                <li class="post-listli">
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 4</h3>
+                    <p>Summary of post 4</p>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</body>
+</html>

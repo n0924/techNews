@@ -14,44 +14,79 @@
             /* width: 100vw; */
             height: 100vh;
 
-            font-family: 'Quicksand', sans-serif;
+            /* font-family: 'Quicksand', sans-serif; Courier New*/
             font-size: 20px;
 
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 100px 1fr;
+            grid-template-rows: 50px 1fr;
 
             gap: 10px;
-            padding: 25px;
+            padding: 5px;
             box-sizing: border-box;
         }
 
         .container div {
-            padding: 15px;
+            padding: 40px;
             /* border: 1px solid black; */
             
         }
 
-        .header {
-            font-size: 50px;
+        .navigation-bar {
+            margin: 0px;
+            height: 30px;
+            
+        }
+
+        /* ul */
+        .nav {
+            list-style-type: none;
+            margin: 10px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #333;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        .navli {
+            float: left;
+            display: inline;
+        }
+
+        .navli a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Palatino, sans-serif;
+            /* width: 100px; */
+        }
+
+        li a:hover {
+            background-color: #111;
         }
 
         .article {
             font-size: 35px;
+            margin: 10px;
+            font-family: 'Quicksand', sans-serif;
         }
 
-        .list div {
+        .post-list div {
             margin: 10px;
             
         }
 
-        ul {
+        .post-list {
             list-style-type: none;
             width: 1fr;
+            font-family: 'Courier New', sans-serif;
         }
 
         h3 {
             font: bold;
+            font-family: 'Quicksand', sans-serif;
         }
 
         li img {
@@ -61,15 +96,15 @@
             height: 175px;
         }
 
-        li p {
+        .post-listli p {
             font: 100px/1.5;
         }
 
-        li {
+        .post-listli {
             overflow: auto;
         }
 
-        li:hover {
+        .post-listli:hover {
             background: #eee;
             cursor: pointer;
         }
@@ -99,36 +134,43 @@
 
 </head>
 <body>
+    <div class="navigation-bar">
+        <ul class="nav">
+            <li class="navli"><a href = "artificialIntelligence.html">Artificial Intelligence</a></li>
+            <li class="navli"><a href = "cybersecurity.html">Cyber Security</a></li>
+            <li class="navli"><a href = "softwareEngineering.html">Software Engineering</a></li>
+            <li class="navli"><a href = "machineLearning.html">Machine Learning</a>
+            <li class="navli"><a href = "games.html">Games</a></li>
+            <li class="navli"><a href = "beginners.html">Beginners</a></li>
+        </ul>
+    </div>
     <div class="container">
-        <div class="header"><span class="bolded">Logo</span></div>
-
-        
         <div class="article"><span class="bolded">Article Section</span>
             <button id="filter" type="button">Filter</button>
         </div>
         
         <div class="list">
             
-            <ul>
-                <li>
+            <ul class="post-list">
+                <li class="post-listli">
                     <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
                     <h3>Post 1</h3>
                     <p>Summary of post 1</p>
                 </li>
 
-                <li>
+                <li class="post-listli">
                     <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
                     <h3>Post 2</h3>
                     <p>Summary of post 2</p>
                 </li>
 
-                <li>
+                <li class="post-listli">
                     <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
                     <h3>Post 3</h3>
                     <p>Summary of post 3</p>
                 </li>
 
-                <li>
+                <li class="post-listli">
                     <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
                     <h3>Post 4</h3>
                     <p>Summary of post 4</p>
