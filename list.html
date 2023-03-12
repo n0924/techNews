@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Discussion</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .container {
+            /* width: 100vw; */
+            height: 100vh;
+
+            font-family: 'Quicksand', sans-serif;
+            font-size: 20px;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 100px 1fr;
+
+            gap: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            padding: 15px;
+            /* border: 1px solid black; */
+            
+        }
+
+        .header {
+            font-size: 50px;
+        }
+
+        .article {
+            font-size: 35px;
+        }
+
+        .list div {
+            margin: 10px;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            width: 1fr;
+        }
+
+        h3 {
+            font: bold;
+        }
+
+        li img {
+            float: left;
+            margin: 10px 15px 0 0;
+            width: 175px;
+            height: 175px;
+        }
+
+        li p {
+            font: 100px/1.5;
+        }
+
+        li {
+            overflow: auto;
+        }
+
+        li:hover {
+            background: #eee;
+            cursor: pointer;
+        }
+
+        #filter {
+            float: right;
+            display: block;
+            border: none;
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        #filter:hover {
+            cursor: pointer;
+            background: grey;
+            color: white;
+        }
+
+        .bolded {
+            font-weight: bold;
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header"><span class="bolded">Logo</span></div>
+
+        
+        <div class="article"><span class="bolded">Article Section</span>
+            <button id="filter" type="button">Filter</button>
+        </div>
+        
+        <div class="list">
+            
+            <ul>
+                <li>
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 1</h3>
+                    <p>Summary of post 1</p>
+                </li>
+
+                <li>
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 2</h3>
+                    <p>Summary of post 2</p>
+                </li>
+
+                <li>
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 3</h3>
+                    <p>Summary of post 3</p>
+                </li>
+
+                <li>
+                    <img src="https://www.shutterstock.com/image-photo/software-source-code-programming-on-600w-634574354.jpg">
+                    <h3>Post 4</h3>
+                    <p>Summary of post 4</p>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</body>
+</html>
