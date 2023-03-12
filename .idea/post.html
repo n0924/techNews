@@ -4,24 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .container {
+            /* width: 100vw; */
+            height: 100vh;
+
+            /* font-family: 'Quicksand', sans-serif; Courier New*/
+            font-size: 20px;
+
+            display: grid;
+            grid-template-columns: 0.1fr 1fr 0.1fr;
+            grid-template-rows: 50px 1fr;
+
+            gap: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            padding: 40px;
+            /* border: 1px solid black; */
+            
+        }
+
+        .navigation-bar {
+            margin: 0px;
+            height: 30px;
+            
+        }
+
+        /* ul */
+        .nav {
+            list-style-type: none;
+            margin: 10px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #333;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        .navli {
+            float: left;
+            display: inline;
+        }
+
+        .navli a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Palatino, sans-serif;
+            /* width: 100px; */
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .main {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        Technology News
-    </header>
-    <nav>
-        <span class = "topic">artificial intelligence</span>
-        <span class = "topic">cybersecurity</span>
-        <span class = "topic">software engineering</span>
-        <span class = "topic">machine learning</span>
-        <span class = "topic">games</span>
-        <span class = "topic">beginners</span>
-    </nav>
-    <main>
-            <h1>Title of Post</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, pariatur earum odit, molestias harum eveniet unde nisi delectus doloribus illo deserunt, ex amet. Reiciendis atque, minus rerum aspernatur sint nam.</p>
-    </main>
-    <footer>Technology News</footer>
+    <div class="navigation-bar">
+        <ul class="nav">
+            <li class="navli"><a href = "artificialIntelligence.html">Artificial Intelligence</a></li>
+            <li class="navli"><a href = "cybersecurity.html">Cyber Security</a></li>
+            <li class="navli"><a href = "softwareEngineering.html">Software Engineering</a></li>
+            <li class="navli"><a href = "machineLearning.html">Machine Learning</a>
+            <li class="navli"><a href = "game.html">Games</a></li>
+            <li class="navli"><a href = "beginners.html">Beginners</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="main"><h1>Post Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et similique cupiditate quos ullam quia expedita sit perspiciatis voluptate incidunt consequuntur reprehenderit explicabo velit beatae blanditiis, repellat soluta assumenda, iste ad labore fuga dolorum voluptatum sequi. Earum ullam iusto, fugiat amet esse veritatis facere delectus corporis eos, quas excepturi itaque iste voluptatem. Debitis neque delectus nemo dolorem! Iusto, magnam. Architecto voluptatem maiores corporis reprehenderit inventore exercitationem nemo voluptatum odit fugit rerum nostrum, dolore modi fugiat accusantium deleniti id quaerat eius hic iure. Architecto accusamus hic et quos recusandae sint eveniet quisquam autem iste, porro explicabo, at ipsa harum modi exercitationem eligendi culpa aliquid deleniti quo rerum sed perspiciatis corrupti optio! Corrupti, dicta, odit voluptates tenetur, cumque aliquid voluptatum nemo dolorum asperiores libero ullam laborum perspiciatis voluptas fugiat magni consequatur nisi ipsam adipisci? Commodi sunt veritatis quo dolores rem? Officiis, necessitatibus? Odit, doloribus sapiente adipisci ullam temporibus error culpa impedit omnis tempora hic delectus minima voluptatem fugiat! Optio, perspiciatis facere modi minima atque possimus, voluptatibus eveniet quae, ex natus nam fugiat laborum hic blanditiis rerum illo eum nisi maxime aliquid beatae. Nulla architecto veritatis in laboriosam sed at mollitia recusandae numquam quas aliquid, rerum praesentium eveniet a eos dolore cupiditate quisquam temporibus.</p>
+        
+        </div>
+    </div>
 </body>
 </html>
