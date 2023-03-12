@@ -1,1 +1,1 @@
-# TechDiscussion 
+# TechNews
